@@ -7,4 +7,4 @@ versi 1.3 Try BootStrap via npm<br>
 versi 1.4 Fix paths<br>
 versi 1.5 Add SVG Background & Custom Font<br>
 versi 1.6 Add Credits & Source Code<br>
-versi 1.7 Add Add Edit Button
+versi 1.7 Add Edit Button
