@@ -47,23 +47,22 @@ function displayTasks() {
     });
   });
 
+  //edit task
   let editButtons = document.querySelectorAll(".edit-task");
   editButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
       let index = e.target.dataset.index;
       taskInput.value = tasks[index].task;
-      form.removeEventListener("submit", addTask);
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         tasks[index].task = taskInput.value;
         localStorage.setItem("tasks", JSON.stringify(tasks));
         taskInput.value = "";
-        form.removeEventListener("submit", editTask);
-        form.addEventListener("submit", addTask);
         displayTasks();
       });
     });
   });
 }
 
+//Initial call
 displayTasks();
