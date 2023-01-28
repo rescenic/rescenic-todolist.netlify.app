@@ -9,27 +9,10 @@ body {
 }
 
 .container {
-    margin-top: 40px;
+    margin-top: 40px auto;
+    max-width: 600px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.delete-btn {
-    background: red;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+.list-group {
+    margin-top: 20px;
 }
